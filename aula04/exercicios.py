@@ -166,20 +166,29 @@
 # 15. Contagem de Frequência de Itens
 # Dada uma string, contar a frequência de cada caractere usando um dicionário.
 
-palavra = 'arara'
-dic_frequencia = {}
+# palavra = 'arara'
+# dic_frequencia = {}
 
-for letra in palavra:
-    if letra not in dic_frequencia:
-        dic_frequencia[letra] = 1
-    else:
-        dic_frequencia[letra] += 1
-print(dic_frequencia)
+# for letra in palavra:
+#     if letra not in dic_frequencia:
+#         dic_frequencia[letra] = 1
+#     else:
+#         dic_frequencia[letra] += 1
+# print(dic_frequencia)
 
 
 # Exercícios de Funções
 
 # 1. Escreva uma função que receba uma lista de números e retorne a soma de todos os números.
+def soma_numeros(numeros):
+    soma = sum(numeros)
+
+    return soma
+
+lista = [5,10,15,20,25]
+print(soma_numeros(lista))
+
+
 
 # 2. Crie uma função que receba um número como argumento e retorne True se o número for primo e False caso contrário.
 
