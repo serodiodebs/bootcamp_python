@@ -107,25 +107,31 @@
 # Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
 # 1. alterar o valor do mouse de 134 para 150
 # 2. alterar o valor do celular de 3000 para 4000
-produtos = [
-    {"nome": "mouse", "preço":120},
-    {"nome": "monitor", "preço":2000},
-    {"nome": "livro", "preço":30},
-    {"nome": "mouse", "preço":134},
-    {"nome": "mouse", "preço":100.50},
-    {"nome": "celular", "preço":3000},
-    {"nome": "celular", "preço":11000}
-]
+# produtos = [
+#     {"nome": "mouse", "preço":120},
+#     {"nome": "monitor", "preço":2000},
+#     {"nome": "livro", "preço":30},
+#     {"nome": "mouse", "preço":134},
+#     {"nome": "mouse", "preço":100.50},
+#     {"nome": "celular", "preço":3000},
+#     {"nome": "celular", "preço":11000}
+# ]
 
-for item in produtos:
-    if item["nome"] == "mouse" and item["preço"] == 134:
-        item["preço"] = 150
-    elif item["nome"] == "celular" and item["preço"] == 3000:
-        item["preço"] = 4000
-    print(item)
+# for item in produtos:
+#     if item["nome"] == "mouse" and item["preço"] == 134:
+#         item["preço"] = 150
+#     elif item["nome"] == "celular" and item["preço"] == 3000:
+#         item["preço"] = 4000
+#     print(item)
 
 # 12. Fusão de Dicionários
 # Dados dois dicionários, fundi-los em um único dicionário.
+
+dic1 : dict = {"nome":"Deb", "idade":30, "mãe":"Ana"}
+dic2 : dict = {"id":1, "produto":"celular", "preço":1000}
+
+dic3 = dic1 | dic2
+print(dic3)
 
 # 13. Filtragem de Dados em Dicionário
 # Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
