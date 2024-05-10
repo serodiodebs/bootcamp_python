@@ -126,15 +126,23 @@
 
 # 12. Fusão de Dicionários
 # Dados dois dicionários, fundi-los em um único dicionário.
+# dic1 : dict = {"nome":"Deb", "idade":30, "mãe":"Ana"}
+# dic2 : dict = {"id":1, "produto":"celular", "preço":1000}
 
-dic1 : dict = {"nome":"Deb", "idade":30, "mãe":"Ana"}
-dic2 : dict = {"id":1, "produto":"celular", "preço":1000}
-
-dic3 = dic1 | dic2
-print(dic3)
+# dic3 = dic1 | dic2
+# print(dic3)
 
 # 13. Filtragem de Dados em Dicionário
 # Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
+produtos = {"monitor":0, "teclado":500, "mouse":0, "cadeira":5000, "pad":90, "caixa de som":0}
+
+for c,v in produtos.items():
+    if v > 0:
+        print(f'O valor do {c} é {v}')
+
+# com o list comprehension
+protudos_com_quantidade = [c for c,v in produtos.items() if v > 0]
+print(f'Os produtos com quantidades em estoque são: {protudos_com_quantidade}')
 
 # 14. Extração de Chaves e Valores
 # Dado um dicionário, criar listas separadas para suas chaves e valores.
