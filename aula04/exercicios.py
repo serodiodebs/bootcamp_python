@@ -94,17 +94,35 @@
 
 # 10. Divisão de Dados em Grupos
 # Dada uma lista de valores, dividir em duas listas: uma para valores pares e outra para ímpares.
-valores = [7, 4, 10, 17, 15, 22, 25, 28, 33, 31, 35, 39, 40, 46, 35, 50, 57, 52, 69, 63, 78, 73]
-pares = [num for num in valores if num % 2 == 0 ]
-impares = [num for num in valores if num % 2 != 0 ]
+# valores = [7, 4, 10, 17, 15, 22, 25, 28, 33, 31, 35, 39, 40, 46, 35, 50, 57, 52, 69, 63, 78, 73]
+# pares = [num for num in valores if num % 2 == 0 ]
+# impares = [num for num in valores if num % 2 != 0 ]
 
-print(f"Os pares são: {pares}")
-print(f"Os impares são: {impares}") 
+# print(f"Os pares são: {pares}")
+# print(f"Os impares são: {impares}") 
 
 # Exercícios com Dicionários
 
 # 11. Atualização de Dados
 # Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
+# 1. alterar o valor do mouse de 134 para 150
+# 2. alterar o valor do celular de 3000 para 4000
+produtos = [
+    {"nome": "mouse", "preço":120},
+    {"nome": "monitor", "preço":2000},
+    {"nome": "livro", "preço":30},
+    {"nome": "mouse", "preço":134},
+    {"nome": "mouse", "preço":100.50},
+    {"nome": "celular", "preço":3000},
+    {"nome": "celular", "preço":11000}
+]
+
+for item in produtos:
+    if item["nome"] == "mouse" and item["preço"] == 134:
+        item["preço"] = 150
+    elif item["nome"] == "celular" and item["preço"] == 3000:
+        item["preço"] = 4000
+    print(item)
 
 # 12. Fusão de Dicionários
 # Dados dois dicionários, fundi-los em um único dicionário.
