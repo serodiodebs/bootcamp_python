@@ -191,16 +191,20 @@
 
 
 # 2. Crie uma função que receba um número como argumento e retorne True se o número for primo e False caso contrário.
-def numero_primo(numero:int):
-    if numero < 2:
-        return False
-    for i in range(2, int(numero/2)+1):
-        if numero % i == 0:
-            return False
-    return True
-print(numero_primo(39))
+# def numero_primo(numero:int):
+#     if numero < 2:
+#         return False
+#     for i in range(2, int(numero/2)+1):
+#         if numero % i == 0:
+#             return False
+#     return True
+# print(numero_primo(39))
 
 # 3. Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
+def reverte_string(palavra: str):
+    palavra_nova = palavra[::-1]
+    return palavra_nova
+print(reverte_string('zorra'))
 
 # 4. Implemente uma função que receba dois argumentos: uma lista de números e um número. 
 # A função deve retornar todas as combinações de pares na lista que somem ao número dado.
