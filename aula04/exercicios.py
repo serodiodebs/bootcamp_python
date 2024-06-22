@@ -180,17 +180,25 @@
 # Exercícios de Funções
 
 # 1. Escreva uma função que receba uma lista de números e retorne a soma de todos os números.
-def soma_numeros(numeros):
-    soma = sum(numeros)
+# def soma_numeros(numeros):
+#     soma = sum(numeros)
 
-    return soma
+#     return soma
 
-lista = [5,10,15,20,25]
-print(soma_numeros(lista))
+# lista = [5,10,15,20,25]
+# print(soma_numeros(lista))
 
 
 
 # 2. Crie uma função que receba um número como argumento e retorne True se o número for primo e False caso contrário.
+def numero_primo(numero:int):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero/2)+1):
+        if numero % i == 0:
+            return False
+    return True
+print(numero_primo(39))
 
 # 3. Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
 
