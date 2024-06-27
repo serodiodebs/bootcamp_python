@@ -19,14 +19,21 @@
 # print(filtrar_dados_acima_do_limite(numeros, filtro))
 
 # 3.Contar Valores Únicos em uma Lista
-def contar_valores_unicos(lista_numeros:list) -> int:
-    return len(set(lista_numeros))
+# def contar_valores_unicos(lista_numeros:list) -> int:
+#     return len(set(lista_numeros))
 
-# criando os parâmetros para a função 
-valores = [10, 20, 20, 40, 87.9, 87.8, 87.8, 100, 675, 675]
-print(contar_valores_unicos(valores))
-
+# # criando os parâmetros para a função 
+# valores = [10, 20, 20, 40, 87.9, 87.8, 87.8, 100, 675, 675]
+# print(contar_valores_unicos(valores))
 
 # 4.Converter Celsius para Fahrenheit em uma List
+# passar lista de celsius e converter
+def converter_celsius_para_fahrenheit(lista_graus:list) -> list:
+    lista = [(numero * 1.8) + 32 for numero in lista_graus]
+    return lista
+
+lista_celsius = [35.0, 43.6, 50.0, 22.3, 10]
+print(converter_celsius_para_fahrenheit(lista_celsius))
+
 # 5.Calcular Desvio Padrão de uma Lista
 # 6.Encontrar Valores Ausentes em uma Sequência
