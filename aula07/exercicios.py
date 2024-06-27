@@ -28,12 +28,21 @@
 
 # 4.Converter Celsius para Fahrenheit em uma List
 # passar lista de celsius e converter
-def converter_celsius_para_fahrenheit(lista_graus:list) -> list:
-    lista = [(numero * 1.8) + 32 for numero in lista_graus]
-    return lista
+# def converter_celsius_para_fahrenheit(lista_graus:list) -> list:
+#     lista = [(numero * 1.8) + 32 for numero in lista_graus]
+#     return lista
 
-lista_celsius = [35.0, 43.6, 50.0, 22.3, 10]
-print(converter_celsius_para_fahrenheit(lista_celsius))
+# lista_celsius = [35.0, 43.6, 50.0, 22.3, 10]
+# print(converter_celsius_para_fahrenheit(lista_celsius))
 
 # 5.Calcular Desvio Padrão de uma Lista
+def calcular_desvio_padrao(lista_valores: list) -> float:
+    from statistics import stdev
+
+    return(stdev(lista_valores))
+
+lista = [10, 40, 789.43, 89, 43.76]
+print(calcular_desvio_padrao(lista))
+
+
 # 6.Encontrar Valores Ausentes em uma Sequência
