@@ -51,4 +51,4 @@ while bonus_validado is not True:
         print("Bônus inválido. Insira um valor positivo para o mesmo.")
 
 resultado = CONSTANTE_VALOR_APLICADO + salario * perc_bonus
-print(f"Olá {nome}! O total que você receberá após o bônus é: {resultado}.")
+print(f"Olá {nome}! O total que você receberá após o bônus: {resultado}.")
