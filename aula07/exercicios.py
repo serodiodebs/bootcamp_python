@@ -36,13 +36,21 @@
 # print(converter_celsius_para_fahrenheit(lista_celsius))
 
 # 5.Calcular Desvio Padrão de uma Lista
-def calcular_desvio_padrao(lista_valores: list) -> float:
-    from statistics import stdev
+# def calcular_desvio_padrao(lista_valores: list) -> float:
+#     from statistics import stdev
 
-    return(stdev(lista_valores))
+#     return(stdev(lista_valores))
 
-lista = [10, 40, 789.43, 89, 43.76]
-print(calcular_desvio_padrao(lista))
+# lista = [10, 40, 789.43, 89, 43.76]
+# print(calcular_desvio_padrao(lista))
 
 
 # 6.Encontrar Valores Ausentes em uma Sequência
+def encontrar_valores_ausentes(sequencia: list) -> list:
+    todos_os_numeros = set(range(min(sequencia), max(sequencia) + 1))
+
+    lista = todos_os_numeros - set(sequencia)
+    return lista
+
+valores = [2,5,6,8,9]
+print(encontrar_valores_ausentes(valores))
